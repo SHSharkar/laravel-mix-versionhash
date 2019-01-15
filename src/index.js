@@ -4,7 +4,7 @@ const jsonfile = require('jsonfile')
 const escapeStringRegexp = require('escape-string-regexp')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
-const separator = '.'
+const separator = '-'
 
 class VersionHash {
     register(options = {}) {

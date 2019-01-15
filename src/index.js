@@ -10,7 +10,7 @@ class VersionHash {
     register(options = {}) {
         this.options = Object.assign(
             {
-                length: 6,
+                length: 20,
                 delimiter: separator,
                 exclude: []
             },

@@ -10,7 +10,7 @@ class VersionHash {
     register(options = {}) {
         this.options = Object.assign(
             {
-                length: 20,
+                length: 32,
                 delimiter: separator,
                 exclude: []
             },
@@ -57,7 +57,7 @@ class VersionHash {
         if (webpackConfig.output.chunkFilename) {
             // merge chunkFilename paths
             let directory = path.dirname(webpackConfig.output.chunkFilename)
-            webpackConfig.output.chunkFilename = `${directory}/${chunkhash}`
+            webpackConfig.output.chunkFilename = chunkhash
         } else {
             webpackConfig.output.chunkFilename = chunkhash
         }
